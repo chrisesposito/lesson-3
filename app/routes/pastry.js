@@ -6,6 +6,14 @@ const router = express.Router()
 const Pastry = require('../models/pastry')
 
 router.get('/', (req, res) => {
+  const getPastries = Pastry.all()
+
+  return getPastries.then(pastries => {
+    return res.status(200).render('pastry/index', {
+      title: `Pauline's Perfect Patisserie`,
+      pastries: pastries.objects
+    })
+  })
 })
 
 router.post('/', (req, res) => {

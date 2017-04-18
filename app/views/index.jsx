@@ -3,19 +3,18 @@ const IndexLayout = require('./layouts/index')
 
 class IndexPage extends React.Component {
   render () {
+    const nameOfCustomer = 'Pauline'
     return (
       <IndexLayout title={this.props.title}>
-        <h1>{this.props.title}</h1>
-
-        <p>You get a phonecall from a Pauline. She is a bourgeoning entrepreneur that is looking to start
+        <p>You get a phonecall from a {nameOfCustomer}. She is a bourgeoning entrepreneur that is looking to start
           a business doing her passion: baking pastries. She is a skilled dessert chef, but has no idea
         how to build a website. This is where you come in.</p>
-        <p>Pauline needs a website where she can advertise her business, give details to her fine baked
+        <p>{nameOfCustomer} needs a website where she can advertise her business, give details to her fine baked
           goods and also have customers order said goods!</p>
         <p>You take the job on, for actual pay not "experience" or any gross stuff like that, because
           she is a respectful client who pays you on time and thinks that you are valuable. You in turn
           pay your designer friend, Racheal (at her going rate) and then she comes up with this great
-          mock-up that Pauline adores. Now it's time for you to implement it.</p>
+          mock-up that {nameOfCustomer} adores. Now it's time for you to implement it.</p>
 
         <h3>Technical details</h3>
 
