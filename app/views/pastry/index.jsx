@@ -3,12 +3,14 @@ const DefaultLayout = require('../layouts/default')
 
 class PastriesPage extends React.Component {
   render () {
-    const { pastries } = this.props
+    const { pastries, title } = this.props
     return (
-      <DefaultLayout title={this.props.title} >
+      <DefaultLayout title={title} >
         <div>
           {pastries.map(pastry => {
-            return <div>{pastry.name}</div>
+            return <div>
+              <a href={`/pastries/${pastry.name}`}>{pastry.name}</a>
+            </div>
           })}
         </div>
       </DefaultLayout>
