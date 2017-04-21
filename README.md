@@ -1,4 +1,6 @@
-# Lesson 3
+# Lesson 3 - Due May 1, 2017
+
+## Getting Started
 
 `cd app`
 
