@@ -4,7 +4,7 @@ const Header = require('../components/header')
 class DefaultLayout extends React.Component {
   render () {
     return (
-      <html>
+      <html className='default-layout'>
         <head>
           <title>{this.props.title}</title>
           <link rel='stylesheet' href='/stylesheets/style.css' />

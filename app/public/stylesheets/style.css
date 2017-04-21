@@ -426,7 +426,28 @@ template {
   display: none;
 }
 
-/** APP STYLES */
+/** FONTS **/
+
+@font-face {
+  font-family: "Brusher";
+  src: url('/fonts/Brusher.ttf');
+}
+
+@font-face {
+  font-family: "Marigold";
+  src: url('/fonts/Marigold.ttf');
+}
+
+/** APP specific STYLES */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 15px;
+}
 
 ul, li {
   list-style: none;
@@ -465,4 +486,48 @@ a:hover {
 
 .pastry-info h5 {
   margin-top: 0;
+}
+
+.default-layout header {
+  background-color: rgb(244, 209, 234);
+  padding: 40px;
+}
+
+.default-layout header h1 {
+  font-weight: lighter;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.default-layout header h1 span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.default-layout header h1 .car-word {
+  font-family: 'Marigold', sans-serif;
+  width: 60%;
+  font-size: 46px;
+}
+
+.default-layout header h1 .cdr-word {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+.pastry-list {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  font-size: 32px;
+}
+
+.pastry-list li {
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+
+.pastry-list li:last-child {
+  border-bottom: 0;
 }
