@@ -20,6 +20,13 @@ We addressed most of this in class, but your goal is to put together the jsx fil
 the basket design and to also hook up the "Add to Order" button on the pastry show
 page.
 
+### Reminder:
+
+This is not a React assignment. There is no front end JavaScript happening here. This
+is an assignment to get you used to JSX components and to test your understanding of
+how your route files work with Express. This means there are no front end event listeners
+or any need to bind events to click, etc.
+
 ## Getting Started
 
 `cd app`
