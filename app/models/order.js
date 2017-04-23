@@ -28,7 +28,7 @@ class Order {
       }
     }
 
-    return Promise.resolve(orderData.pastries[pastry.name])
+    return Promise.resolve(orderData.pastries[pastryName])
   }
 
   static getOrder () {
@@ -39,11 +39,11 @@ class Order {
       return acc + pastry.totalPrice
     }, 0)
 
-
     return Promise.resolve({
       pastries: objects,
       totalPrice
     })
   }
 }
-module.exports
+
+module.exports = Order
