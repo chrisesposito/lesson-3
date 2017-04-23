@@ -3,6 +3,8 @@
 const express = require('express')
 const router = express.Router()
 
+const Pastry = require('../models/pastry')
+
 router.get('/', (req, res) => {
 })
 
