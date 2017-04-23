@@ -39,6 +39,16 @@ Visit <a href="http://localhost:3000">http://localhost:3000</a> for instructions
 
 To start, check out the already existing: <a href='/pastry'>/pastry page</a>
 
+
+## Helpful Resources
+
+- [https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/render-jsx?action=lesson_resume](https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/render-jsx?action=lesson_resume)
+- [The expressjs api](http://expressjs.com/en/4x/api.html)
+- [HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
+- [HTTP Status Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+- [Introduction to JSX](https://facebook.github.io/react/docs/introducing-jsx.html)
+- [JSX in Depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
+
 ## Model Documentation
 
 ### Pastry
