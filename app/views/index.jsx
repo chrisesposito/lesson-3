@@ -16,6 +16,8 @@ class IndexPage extends React.Component {
           pay your designer friend, Racheal (at her going rate) and then she comes up with this great
           mock-up that {nameOfCustomer} adores. Now it's time for you to implement it.</p>
 
+        <p>To start check out the already existing: <a href='/pastry'>/pastry page</a></p>
+
         <h3>Technical details</h3>
 
         <p>You will be using these technologies:</p>
