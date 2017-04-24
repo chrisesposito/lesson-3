@@ -3,31 +3,20 @@
 const express = require('express')
 const router = express.Router()
 
-const Pastry = require('../models/pastry')
-
 router.get('/', (req, res) => {
+  // Get the order here
 })
 
-router.get('/:name', (req, res) => {
-  const { name } = req.params
-
-  const getPastry = Pastry.find(name)
-
-  return getPastry.then(pastry => {
-    return res.status(200).render('pastry/show', {
-      title: `Pauline's Perfect Patisserie`,
-      pastry
-    })
-  })
+router.post('/pastries', (req, res) => {
+  // Add an item to the order
 })
 
-router.post('/', (req, res) => {
+router.delete('/pastries/:pastryName', (req, res) => {
+  // Remove the item from the order
 })
 
-router.put('/:name', (req, res) => {
-})
-
-router.delete('/:name', (req, res) => {
+router.delete('/', (req, res) => {
+  // Clear the order all together
 })
 
 module.exports = router

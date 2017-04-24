@@ -1,4 +1,4 @@
-# Lesson 3 - Due May 1, 2017
+# Lesson 3 - Due May 8, 2017
 
 ## Assignment
 
@@ -19,6 +19,26 @@ time for you to implement it.
 We addressed most of this in class, but your goal is to put together the jsx file for
 the basket design and to also hook up the "Add to Order" button on the pastry show
 page.
+
+### Goals
+
+Take what was learned in class and in Lesson 2 and use it to create a new page
+from scratch.
+
+### Objectives
+
+1. Fill in the appropriate routes to manage the order page. This includes a route to
+add a pastry to an order (think POST `/orders/pastries`), to remove a pastry from an order
+DELETE `/orders/pastries/:pastryName`, and to clear the order all together. BIG HINT:
+You'll need to add the route to the app.js file to make this work. In there, you'll
+see how pastries is lined up. Follow that example.
+
+2. Build the order page. You can do this without any styles if you'd like. I can help
+fill those in (and will do exactly that).
+
+3. On the order page, I should be able to see the current order. This order will go away
+when you restart your server, as we're not persisting the data yet (that comes later).
+
 
 ### Reminder:
 
