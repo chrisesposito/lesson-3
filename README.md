@@ -57,7 +57,7 @@ or any need to bind events to click, etc.
 
 Visit <a href="http://localhost:3000">http://localhost:3000</a> for instructions.
 
-To start, check out the already existing: <a href='/pastries'>/pastry page</a>
+To start, check out the already existing: <a href='http://localhost:3000/pastries'>/pastries page</a>
 
 
 ## Helpful Resources
