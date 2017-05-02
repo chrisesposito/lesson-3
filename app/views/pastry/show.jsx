@@ -15,6 +15,12 @@ class PastryPage extends React.Component {
           <h5>{pastry.name}</h5>
           <p>{pastry.description}</p>
           <div>{formatPrice(pastry.price)}</div>
+          <form method="post" action ="/orders/pastries">
+            <input type="hidden" name="pastry" value={pastry} />
+            <div class="button">
+              <button type="submit">Add to Basket</button>
+            </div>
+          </form>
         </div>
       </DefaultLayout>
     )
