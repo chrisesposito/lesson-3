@@ -10,7 +10,7 @@ class OrderPage extends React.Component
 {
     render()
     {
-        const {pastries, title} = this.props
+        const {pastries, title, totalPrice} = this.props
 
         const pastryItems = pastries.map((pastry) => {
             <li key={pastry.name}>
@@ -32,8 +32,8 @@ class OrderPage extends React.Component
                                             )
                                 })
                     }
-                    <div>Total: {formatPrice(pastries.totalPrice)}</div>
-                    <form method="POST" action={`/order/?_method=DELETE`}>
+                    <div>Total: {formatPrice(totalPrice)}</div>
+                    <form method="POST" action={`/order/?_method=DELETE_ALL`}>
                         <button>Remove All</button>
                     </form>
 
