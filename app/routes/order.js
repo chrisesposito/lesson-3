@@ -28,10 +28,13 @@ router.get('/', (req, res) => {
 // but it blows up when it tries to render the page
 router.post('/pastries', (req, res) => {
     // Add an item to the order
-    const {pastry} = req.body
-    const addedToOrder = Order.addPastry(pastry);
-    return addedToOrder.then(result => {
-        return res.redirect('/orders');
+    const {name} = req.body
+    const getPastry = Pastry.find(name)
+    return getPastry.then(pastry => {
+        return Order.addPastry(pastry).then(pastry => {
+            res.redirect('/orders');
+
+        })
     })
 })
 

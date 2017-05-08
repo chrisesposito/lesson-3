@@ -12,7 +12,6 @@ class OrderPage extends React.Component
     {
         const {pastries, title} = this.props
 
-        //const pastryArray = this.props.pastries[Object.keys(pastries)[0]];
         const pastryItems = pastries.map((pastry) => {
             <li key={pastry.name}>
                 {pastry.name}
@@ -26,7 +25,7 @@ class OrderPage extends React.Component
                                                 <ul>
                                                     <li key={pastry.name}>{pastry.name}, Item Price: {formatPrice(pastry.price)}, Quantity: {pastry.quantity}</li>
                                                     <li>{pastry.name} Total: {formatPrice(pastry.totalPrice)}</li>
-                                                    <form method="POST" action={`../order/pastries/${pastry.name}?_method=DELETE`}>
+                                                    <form method="POST" action={`/order/pastries/${pastry.name}?_method=DELETE`}>
                                                         <li><button>Remove</button></li>
                                                     </form>
                                                 </ul>
@@ -34,7 +33,7 @@ class OrderPage extends React.Component
                                 })
                     }
                     <div>Total: {formatPrice(pastries.totalPrice)}</div>
-                    <form method="POST" action={`../order/?_method=DELETE`}>
+                    <form method="POST" action={`/order/?_method=DELETE`}>
                         <button>Remove All</button>
                     </form>
 
