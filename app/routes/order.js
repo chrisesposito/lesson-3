@@ -24,7 +24,7 @@ router.get('/', (req, res) => {
 
 router.post('/pastries', (req, res) => {
 // Add an item to the order
-    const {name} = req.body.name
+    const {name} = req.body
     console.log(" add pastry - name = " + name)
     const getPastry = Pastry.find(name)
     return getPastry.then(pastry => {
@@ -36,7 +36,7 @@ router.post('/pastries', (req, res) => {
 
 router.post('/pastries/:name', (req, res) => {
     // Remove the item from the order
-    const {name} = req.body.name
+    const {name} = req.body
     console.log("delete pastry by name =" + name)
     const removeItem = Order.removePastry(name)
 

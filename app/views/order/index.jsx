@@ -24,8 +24,7 @@ class OrderPage extends React.Component
                                     return (
                                                 <ul>
                                                     <li key={pastry.name}>{pastry.name}, Item Price: {formatPrice(pastry.price)}, Quantity: {pastry.quantity}</li>
-                                                    <li>{pastry.name} Total: {formatPrice(pastry.totalPrice)}</li>
-                                                    <form method="POST" action='`/orders/pastries/${pastry.name}`'>
+                                                    <li>{pastry.name} Total: {formatPrice(pastry.totalPrice)}</li>                                                                               <form method="POST" action={`/orders/pastries/${pastry.name}`}>
                                                         <input type="hidden" name="name" value={pastry.name} />
                                                         <li><button>Remove</button></li>
                                                     </form>
